@@ -225,6 +225,18 @@ fieldset[disabled] .btn-xl.active {
     font-size: 1.5em;
   }
 }
+.intro-header {
+  background-color: #777777;
+  background: no-repeat center center;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 700px;
+  margin-bottom: 50px;
+}
+
 header {
   background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
@@ -258,7 +270,7 @@ header .intro-text .intro-heading {
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 300px;
+    padding-top: 500px;
     padding-bottom: 200px;
   }
   header .intro-text .intro-lead-in {
