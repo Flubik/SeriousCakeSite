@@ -496,7 +496,7 @@ section h3.section-subheading {
 }
 @media (min-width: 992px) {
   .timeline > li {
-    min-height: 150px;
+    min-height: 25px;
   }
   .timeline > li .timeline-panel {
     padding: 0 20px 20px;
