@@ -9,26 +9,26 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Serious Cake - game development studio</title>
+    <title>Agency - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/agency.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+    <!-- Theme CSS -->
+    <link href="css/agency.css" rel="stylesheet">
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
 
 </head>
@@ -36,15 +36,12 @@
 <body id="page-top" class="index">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">Serious Cake</a>
             </div>
@@ -54,7 +51,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
-                    </li>                  
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about-us">О компании</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="#vacancies">Вакансии</a>
                     </li>
@@ -72,66 +72,60 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
             </div>
         </div>
     </header>
 
     <!-- Services Section -->
-    <section id="vacancies">
+    <section id="about-us">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Кто мы</h2>
-                    <h3 class="section-subheading text-muted">Serious Cake – новая и иногда даже слишком быстро развивающаяся игровая студия. Сейчас мы сделали вот такую MMORTS игру: <br>
-                    <br>
-                    <p><a href="https://play.google.com/store/apps/details?id=eu.inn.AgeOfPhoenix&amp;hl=ru" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://lh3.googleusercontent.com/CETZrzW1vxYUuCJ7dduym-YwLZCYL0kDDiL49xKpDSGyeQfveujP_udDZaaUdPf9Ng=h900-rw" alt="age of Phoenix: Wind of war" width="300" height="480" /></a></p>
-                    <br>
-                    <br>
-                    Мы продолжаем развивать нашу игру, а так же будем выпускать новые проекты. 
-                    <br>
-                    <br>
-                    Так как мы продуктовая компания и сконцентрированы на качестве наших продуктов, поэтому у нас маленькая, но очень эффективная команда. Мы очень серьезно (мы ж серьезная печенька) подходим к найму - для нас это всегда долгая история. Мы обращаем внимание на базовые знания (алгоритмы, структуры данных, то как сделаны и работают большие вещи) - именно их мы считаем необходимыми для хорошего программиста.
-                    <br>
-                    <br>
-                    Мы в самом начале нашего развития, поэтому легки на изменения и живем внутри постоянных изменений и дискуссий.
-                    <br>
-                    <br>
-                    Офис в центре Киева.
-                    </h3>
-                    <h2 class="section-heading">Кого ищем</h2>
-                    <h3 class="section-subheading text-muted">Мы активно ищем C# разработчика в команду сервера для нашей игры. Внутри у нас AKKA, распределенные транзакции и никакого занудного CRUD. Мы не ищем человека на поддержку, нам нужен человек, который будет развивать наш продукт и переосмысливать уже сделанное.
-                    <br>
-                    <br>
-                    Что мы от вас хотим: алгоритмы, структуры данных и понимание того, как работают  сервера. Опыт в AKKA для нас не принципиален, важны базовые знания об устройстве мира распределенных программ.
-                    <br>
-                    <br>
-                    Команда небольшая, поэтому коммуникации - для нас ключевой момент.
-                    <br>
-                    <br>
-                    <b>Technical Skills (must)</b><br><br>
-                    Алгоритмы, структуры данных в рамках базовых курсов. Умение писать код: вот прям так из головы решать средней сложности алгоритмические задачки на бумажке или в редакторе.
-                    <b>Technical Skills (nice to have)</b></br><br>
-                    Ключевые слова, которые могут быть сигналом того, что кандидат нам интересен: <b>C#. .Net, AKKA, Distributed Systems</b></br><br>
-                    <b>Личные качества</b></br><br>
-                    Мы играем в плоскую команду с большим уровнем самостоятельности.
-                    Поэтому мы ждем, что кандидат спокойно задает вопросы коллегам, когда у него  и не боится сказать, что у него проблема или у него не получается.
-                    Лучшие решения - всегда коллективные. Поэтому я надеюсь на то, что кандидат умеет обсуждать, предлагать, слушать критику.</br><br>
-                    <b>Уровень английского</b><br><br>
-                    Не важно вообще
-                    </h3><br>
+                    <h2 class="section-heading">О компании</h2>
+                    <h3 class="section-subheading text-muted">Компания была основана в 2015 году. Мы занимаемся разработкой игр и приложений для мобильных устройств. Наша команда состоит из 30 специалистов, 20 из которых работают в офисе в центре Киева.<br>
+                    В апреле 2017 был запущен софт-лонч нашего основного продукта — многопользовательской стратегии в реальном времени Age of Phoenix: Wind of war.<br><br>
+                    <b>Посмотреть игру в Goole Play:</b><br>
+                     <p><a href="https://play.google.com/store/apps/details?id=eu.inn.AgeOfPhoenix&amp;hl=ru" target="_blank"><img style="display: block; margin-left: auto; margin-right: auto;" src="https://lh3.googleusercontent.com/CETZrzW1vxYUuCJ7dduym-YwLZCYL0kDDiL49xKpDSGyeQfveujP_udDZaaUdPf9Ng=h900-rw" alt="age of Phoenix: Wind of war" width="300" height="480" /></a></p></h3>
                 </div>
             </div>
+        </div>
     </section>
-        
-    
+
+    <!-- Portfolio Grid Section -->
+    <section id="vacancies" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Вакансии</h2>
+                    <h3 class="section-subheading text-muted">Мы ищем следующих сотрудников:</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img src="http://seriouscake.net/img/help_me_stack_overflow_youre_my_only_hope.jpg" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>C# Backend</h4>
+                        <p class="text-muted">Net, AKKA</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Связаться с нами:</h2>
-                    <h3 class="section-heading">hr@seriouscake.net</h3>
+                    <h2 class="section-heading">hr@seriouscake.net</h2>
                 </div>
             </div>
         </div>
@@ -141,7 +135,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Serious Cake 2017</span>
+                    <span class="copyright">Copyright &copy; SeriousCake 2017</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -155,30 +149,62 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
- 
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Vacancies Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>C# Backend</h2>
+                                <p class="item-intro text-muted">Мы активно ищем C# разработчика в команду сервера для нашей игры.</p>
+                                <img class="img-responsive img-centered" src="http://seriouscake.net/img/help_me_stack_overflow_youre_my_only_hope.jpg" alt="">
+                                <p>Внутри у нас AKKA, распределенные транзакции и никакого занудного CRUD. Мы не ищем человека на поддержку, нам нужен человек, который будет развивать наш продукт и переосмысливать уже сделанное.</p>
+                                <p>Что мы от вас хотим: алгоритмы, структуры данных и понимание того, как работают сервера. Опыт в AKKA для нас не принципиален, важны базовые знания об устройстве мира распределенных программ.</p>
+                                <p>Команда небольшая, поэтому коммуникации – для нас ключевой момент.</p>
+                                <p>
+                                    <strong>Чтобы у нас работать, надо знать:</strong><br><br>Алгоритмы, структуры данных в рамках базовых курсов. Умение писать код: вот прям так из головы решать средней сложности алгоритмические задачки и писать код вот сразу редакторе. Stackoverflow, конечно, поможет найти все, что угодно, но откуда вы узнаете, что искать?</p>
+                                <p><b>Было бы отлично:</b> .Net, AKKA </p>
+                                <p><b>Личные качества:</b> Мы играем в плоскую команду с большим уровнем самостоятельности. Поэтому мы ждем, что кандидат спокойно задает вопросы коллегам, когда у него они есть. Не боится сказать, что у него проблема или у него не получается. Лучшие решения – всегда коллективные. Поэтому я надеюсь на то, что кандидат умеет обсуждать и предлагать решения, а также слушать и выдавать критику.</p>
+                                <p><b>Уровень английского:</b> Не важно вообще, хотя мы почти все хорошо говорим по-английски.</p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Закрыть окно</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="js/classie.js"></script>
-    <script src="js/cbpAnimatedHeader.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
 
-    <!-- Custom Theme JavaScript -->
-    <script src="js/agency.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
 </body>
 
