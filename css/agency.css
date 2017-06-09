@@ -227,19 +227,19 @@ fieldset[disabled] .btn-xl.active {
 }
 .intro-header {
   background-color: #777777;
-  background: no-repeat center center;
+  background: center center;
   background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-top: 700px;
-  margin-bottom: 50px;
+  padding-top: 25px;
+  margin-bottom: 15px;
 }
 
 header {
-  background-image: url('../img/header-bg.jpg');
-  background-repeat: no-repeat;
+  background-image: url('../img/background.png');
+  background-repeat: repeat;
   background-attachment: scroll;
   background-position: center center;
   -webkit-background-size: cover;
