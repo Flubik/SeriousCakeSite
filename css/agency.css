@@ -16,6 +16,7 @@ body {
 p {
   font-size: 14px;
   line-height: 1.75;
+  font-family: arial, verdana, sans-serif;
 }
 p.large {
   font-size: 16px;
