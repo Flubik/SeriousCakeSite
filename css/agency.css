@@ -228,6 +228,7 @@ fieldset[disabled] .btn-xl.active {
 .header-logo{
   padding-top: 50px;
   margin-bottom: 50px;
+  align-self: center;
 }
 .intro-header {
   background-color: #777777;
